@@ -1,0 +1,46 @@
+// == HEADER
+
+header {
+  background-image: url('../assets/images/headerImage.png');
+  background-position-x: 100px;
+  background-size: 665px;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+    h1 {
+      float: right;
+      text-align: right;
+      margin: 380px 100px 0 0;
+      padding-right: 60px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      font-family: $secondaryFont;
+      width: 100vw;
+      background-color: black;
+      color: #fff;
+      font-weight: 800;
+      font-size: 9.0rem;
+    }
+
+    p {
+      float: right;
+      margin-right: 20px;
+      font-size: 2.8rem;
+      line-height: 3.0;
+      letter-spacing: 0.7px;
+    }
+
+    button {
+      @include buttonStyle;
+      clear: both;
+      float: right;
+      margin-right: 435px;
+        &:hover,
+        &:focus {
+          background-color: $secondary;
+          color: $primary;
+          border: 3px solid $primary;
+          cursor: pointer;
+      }
+    }
+}

@@ -1,0 +1,106 @@
+// == MAIN
+
+.flex {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    .mainHead {
+        h2 {
+          font-size: 5.0rem;
+          margin-top: 100px;
+        }
+
+        button {
+          @include buttonStyle;
+            &:hover,
+            &:focus {
+              background-color: $secondary;
+              color: $primary;
+              border: 3px solid $primary;
+              cursor: pointer;
+          }
+        }
+    }
+}
+
+.canvas {
+  background: url('../assets/images/friesCanvas.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 700px;
+  height: 500px;
+  margin-top: 250px;
+  position: relative;
+
+    .imgContainer {
+      display: none;
+    }
+
+    .ketchup {
+      position: absolute;
+      left: 145px;
+      bottom: 200px;
+      rotate: 25deg;
+    }
+
+    .cheese {
+      position: absolute;
+      left: 115px;
+      top: 5px;
+    }
+
+    .peppers {
+      position: absolute;
+      max-width: 400px;
+      left: 140px;
+      top: 0;
+    }
+
+    .onion {
+      position: absolute;
+      max-width: 440px;
+      left: 125px;
+      bottom: 120px;
+    }
+
+    .iceCream {
+      position: absolute;
+      max-width: 350px;
+      left: 165px;
+      top: -80px;
+    }
+
+    .sprinkles {
+      position: absolute;
+      top: 28px;
+      left: 60px;
+    }
+
+    .vaccine {
+      position: absolute;
+      max-width: 320px;
+      left: 190px;
+      top: 45px;
+    }
+
+    .kitten {
+      position: absolute;
+      top: 60px;
+      left: 100px;
+    }
+
+    .sock {
+      position: absolute;
+      max-width: 500px;
+      left: 80px;
+      top: 80px;
+    }
+
+    .face {
+      position: absolute;
+      max-width: 300px;
+      left: 180px;
+      top: 20px;
+    }
+}

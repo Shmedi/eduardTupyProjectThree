@@ -1,0 +1,14 @@
+// == MIXINS
+
+@mixin buttonStyle {
+  padding: 12px 60px;
+  font-family: $baseFont;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 3px solid $secondary;
+  border-radius: 15px;
+  color: $secondary;
+  background-color: $primary;
+  transition: all 0.3s;
+}
