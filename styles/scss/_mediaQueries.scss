@@ -1,8 +1,12 @@
 // == MEDIA QUERIES
 
-@media (max-width: 1256px) {
+@media (max-width: 1368px) {
   .mainHead {
     text-align: center;
+  }
+
+  .canvas {
+    margin-top: 120px;
   }
 }
 

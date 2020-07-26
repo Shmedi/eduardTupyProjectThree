@@ -9,7 +9,7 @@
         h2 {
           font-size: 3.5rem;
           font-family: $secondaryFont;
-          margin-top: 100px;
+          margin: 100px 0 20px 0;
         }
 
         button {
@@ -22,6 +22,11 @@
               cursor: pointer;
           }
         }
+    }
+
+    .comment {
+        font-size: 3rem;
+        padding: 20px 0;
     }
 }
 

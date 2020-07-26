@@ -16,38 +16,37 @@ friesApp.eventListener = function() {
     // Cache the images
     const imgArray = $('.imgContainer');
 
-    // randomize the image to be selected on click
-    const randomImg = Math.floor(Math.random() * imgArray.length) + 1;
+    // Create an array for the comments
+    const comments = [
+      'Don\'t stare into his eyes please',
+      'I would say something cheesy, but that\'s lame',
+      'Almost as spicy as your attitude',
+      'That does look rather ravishing',
+      'It\'s almost like a funnel cake except, no it\'s not',
+      'Wow, how exciting',
+      'At least it\'s not \"essential oils\"',
+      '...You\'re sick in the head',
+      'Disgusting',
+      'I mean sure? A little odd but okay'
+    ];
 
     // Keep the images hidden
     $('.imgContainer').hide();
 
-    // Reveal the randomly chosen image on the canvas
-    // Populate the <p> tag with the corresponding text??
-    for (let i = 0; i < imgArray.length; i++) {
-      
-      if (randomImg === 1) {
-        imgArray[0].style.display = 'block';
-      } else if (randomImg === 2) {
-        imgArray[1].style.display = 'block';
-      } else if (randomImg === 3) {
-        imgArray[2].style.display = 'block';
-      } else if (randomImg === 4) {
-        imgArray[3].style.display = 'block';
-      } else if (randomImg === 5) {
-        imgArray[4].style.display = 'block';
-      } else if (randomImg === 6) {
-        imgArray[5].style.display = 'block';
-      } else if (randomImg === 7) {
-        imgArray[6].style.display = 'block';
-      } else if (randomImg === 8) {
-        imgArray[7].style.display = 'block';
-      } else if (randomImg === 9) {
-        imgArray[8].style.display = 'block';
-      } else {
-        imgArray[9].style.display = 'block';
-      }  
-    }
+    // randomize the image to be selected on click
+    const randomImg = Math.floor(Math.random() * imgArray.length);
+
+    // Match the image array number to the random number
+    $('.number-check').html(randomImg);
+
+    // Display the matched image
+    imgArray[randomImg].style.display = 'block';
+
+    // Add a comment to the DOM
+    $('.comment').html( function() {
+      // Match comment to the image with the generated number
+      return comments[randomImg];
+    });
   });
 }
 
