@@ -1,0 +1,76 @@
+// == MEDIA QUERIES
+
+@media (max-width: 1256px) {
+  .mainHead {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  .initContainer {
+    text-align: center;
+      p {
+        float: none;
+      }
+
+      button {
+        float: none;
+        margin: 0;
+      }
+  }
+}
+
+@media (max-width: 816px) {
+  header {
+    background-size: auto;
+    background-position-x: center;
+      h1 {
+        margin-top: 540px;
+        text-align: center;
+        margin-right: 25px;
+        padding: 0 0 0 125px;
+      }
+
+      .initContainer {
+        p {
+          font-size: 2.8rem;
+          line-height: 1.8;
+        }
+      }
+  }
+}
+
+@media (max-width: 728px) {
+  header {
+    h1 {
+     font-size: 4.0rem;
+     padding-right: 25px;
+    }    
+  }
+}
+
+@media (max-width: 498px) {
+  header {
+    h1 {
+      margin: 500px 0 20px 0;
+      padding-left: 60px;
+    }
+
+    .initContainer {
+      p {
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .canvas {
+    height: 350px;
+  }
+}

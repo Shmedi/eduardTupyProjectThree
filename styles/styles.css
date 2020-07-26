@@ -300,19 +300,18 @@ header h1 {
   font-size: 9.0rem;
 }
 
-header p {
+.initContainer p {
   float: right;
-  margin-right: 20px;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   line-height: 3.0;
-  letter-spacing: 0.7px;
 }
 
-header button {
-  padding: 12px 60px;
+.initContainer button {
+  padding: 12px 50px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
   border: 3px solid #c80c0a;
   border-radius: 15px;
@@ -322,10 +321,10 @@ header button {
   transition: all 0.3s;
   clear: both;
   float: right;
-  margin-right: 435px;
+  margin-right: 450px;
 }
 
-header button:hover, header button:focus {
+.initContainer button:hover, .initContainer button:focus {
   background-color: #c80c0a;
   color: #f6be37;
   border: 3px solid #f6be37;
@@ -344,15 +343,17 @@ header button:hover, header button:focus {
 }
 
 .flex .mainHead h2 {
-  font-size: 5.0rem;
+  font-size: 3.5rem;
+  font-family: "Bungee", cursive;
   margin-top: 100px;
 }
 
 .flex .mainHead button {
-  padding: 12px 60px;
+  padding: 12px 50px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
   border: 3px solid #c80c0a;
   border-radius: 15px;
@@ -385,67 +386,138 @@ header button:hover, header button:focus {
 
 .canvas .ketchup {
   position: absolute;
-  left: 145px;
-  bottom: 200px;
-  rotate: 25deg;
+  left: 25%;
+  top: 12%;
+  margin-right: 25%;
+  rotate: 5deg;
 }
 
 .canvas .cheese {
   position: absolute;
-  left: 115px;
-  top: 5px;
+  left: 17%;
+  top: 0.2%;
+  margin-right: 15%;
 }
 
 .canvas .peppers {
   position: absolute;
   max-width: 400px;
-  left: 140px;
+  left: 19%;
   top: 0;
+  margin-right: 20%;
 }
 
 .canvas .onion {
   position: absolute;
   max-width: 440px;
-  left: 125px;
-  bottom: 120px;
+  left: 18%;
+  top: 6%;
+  margin-right: 17%;
 }
 
 .canvas .iceCream {
   position: absolute;
-  max-width: 350px;
-  left: 165px;
-  top: -80px;
+  max-width: 300px;
+  left: 27%;
+  top: -10%;
+  margin-right: 25%;
 }
 
 .canvas .sprinkles {
   position: absolute;
-  top: 28px;
-  left: 60px;
+  top: 5%;
+  left: 8%;
+  margin-right: 8%;
 }
 
 .canvas .vaccine {
   position: absolute;
   max-width: 320px;
-  left: 190px;
-  top: 45px;
+  left: 28%;
+  top: 5%;
+  margin-right: 23%;
 }
 
 .canvas .kitten {
   position: absolute;
-  top: 60px;
-  left: 100px;
+  top: 8%;
+  left: 15%;
+  margin-right: 10%;
 }
 
 .canvas .sock {
   position: absolute;
-  max-width: 500px;
-  left: 80px;
-  top: 80px;
+  max-width: 450px;
+  rotate: 8deg;
+  left: 15%;
+  top: 10%;
+  margin-right: 15%;
 }
 
 .canvas .face {
   position: absolute;
   max-width: 300px;
-  left: 180px;
-  top: 20px;
+  left: 27%;
+  top: 0;
+  margin-right: 26%;
+}
+
+@media (max-width: 1256px) {
+  .mainHead {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 6rem;
+  }
+  .initContainer {
+    text-align: center;
+  }
+  .initContainer p {
+    float: none;
+  }
+  .initContainer button {
+    float: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 816px) {
+  header {
+    background-size: auto;
+    background-position-x: center;
+  }
+  header h1 {
+    margin-top: 540px;
+    text-align: center;
+    margin-right: 25px;
+    padding: 0 0 0 125px;
+  }
+  header .initContainer p {
+    font-size: 2.8rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 728px) {
+  header h1 {
+    font-size: 4.0rem;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 498px) {
+  header h1 {
+    margin: 500px 0 20px 0;
+    padding-left: 60px;
+  }
+  header .initContainer p {
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  .canvas {
+    height: 350px;
+  }
 }

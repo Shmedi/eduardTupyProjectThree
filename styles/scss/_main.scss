@@ -7,7 +7,8 @@
   justify-content: space-around;
     .mainHead {
         h2 {
-          font-size: 5.0rem;
+          font-size: 3.5rem;
+          font-family: $secondaryFont;
           margin-top: 100px;
         }
 
@@ -39,68 +40,79 @@
 
     .ketchup {
       position: absolute;
-      left: 145px;
-      bottom: 200px;
-      rotate: 25deg;
+      left: 25%;
+      top: 12%;
+      margin-right: 25%;
+      rotate: 5deg;
     }
 
     .cheese {
       position: absolute;
-      left: 115px;
-      top: 5px;
+      left: 17%;
+      top: 0.2%;
+      margin-right: 15%;
     }
 
     .peppers {
       position: absolute;
       max-width: 400px;
-      left: 140px;
+      left: 19%;
       top: 0;
+      margin-right: 20%;
     }
 
     .onion {
       position: absolute;
       max-width: 440px;
-      left: 125px;
-      bottom: 120px;
+      left: 18%;
+      top: 6%;
+      margin-right: 17%;
     }
 
     .iceCream {
       position: absolute;
-      max-width: 350px;
-      left: 165px;
-      top: -80px;
+      max-width: 300px;
+      left: 27%;
+      top: -10%;
+      margin-right: 25%;
     }
 
     .sprinkles {
       position: absolute;
-      top: 28px;
-      left: 60px;
+      top: 5%;
+      left: 8%;
+      margin-right: 8%;
     }
 
     .vaccine {
       position: absolute;
       max-width: 320px;
-      left: 190px;
-      top: 45px;
+      left: 28%;
+      top: 5%;
+      margin-right: 23%;
     }
 
     .kitten {
       position: absolute;
-      top: 60px;
-      left: 100px;
+      top: 8%;
+      left: 15%;
+      margin-right: 10%;
     }
 
     .sock {
       position: absolute;
-      max-width: 500px;
-      left: 80px;
-      top: 80px;
+      max-width: 450px;
+      rotate: 8deg;
+      left: 15%;
+      top: 10%;
+      margin-right: 15%;
     }
 
     .face {
       position: absolute;
       max-width: 300px;
-      left: 180px;
-      top: 20px;
+      left: 27%;
+      top: 0;
+      margin-right: 26%;
     }
 }

@@ -23,7 +23,7 @@ friesApp.eventListener = function() {
     $('.imgContainer').hide();
 
     // Reveal the randomly chosen image on the canvas
-    // Populate the <p> tag with the corresponding text
+    // Populate the <p> tag with the corresponding text??
     for (let i = 0; i < imgArray.length; i++) {
       
       if (randomImg === 1) {
