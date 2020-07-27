@@ -277,6 +277,11 @@ body {
   line-height: 2.0;
 }
 
+.underline {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(40%, #f6bd3798));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f6bd3798 40%);
+}
+
 header {
   background-image: url("../assets/images/headerImage.png");
   background-position-x: 100px;
@@ -300,23 +305,23 @@ header h1 {
   font-size: 9.0rem;
 }
 
-.initContainer p {
+.introContainer p {
   float: right;
   font-size: 3.2rem;
   line-height: 3.0;
 }
 
-.initContainer button {
+.introContainer button {
   padding: 12px 50px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  border: 3px solid #c80c0a;
+  border: 4px solid black;
   border-radius: 15px;
-  color: #c80c0a;
-  background-color: #f6be37;
+  color: #f6be37;
+  background-color: #c80c0a;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   clear: both;
@@ -324,10 +329,10 @@ header h1 {
   margin-right: 450px;
 }
 
-.initContainer button:hover, .initContainer button:focus {
-  background-color: #c80c0a;
-  color: #f6be37;
-  border: 3px solid #f6be37;
+.introContainer button:hover, .introContainer button:focus {
+  background-color: #f6be37;
+  color: #c80c0a;
+  border: 4px solid black;
   cursor: pointer;
 }
 
@@ -345,7 +350,7 @@ header h1 {
 .flex .mainHead h2 {
   font-size: 3.5rem;
   font-family: "Bungee", cursive;
-  margin: 20px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 .flex .mainHead button {
@@ -355,18 +360,18 @@ header h1 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  border: 3px solid #c80c0a;
+  border: 4px solid black;
   border-radius: 15px;
-  color: #c80c0a;
-  background-color: #f6be37;
+  color: #f6be37;
+  background-color: #c80c0a;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .flex .mainHead button:hover, .flex .mainHead button:focus {
-  background-color: #c80c0a;
-  color: #f6be37;
-  border: 3px solid #f6be37;
+  background-color: #f6be37;
+  color: #c80c0a;
+  border: 4px solid black;
   cursor: pointer;
 }
 
@@ -480,13 +485,13 @@ header h1 {
   header h1 {
     font-size: 6rem;
   }
-  .initContainer {
+  .introContainer {
     text-align: center;
   }
-  .initContainer p {
+  .introContainer p {
     float: none;
   }
-  .initContainer button {
+  .introContainer button {
     float: none;
     margin: 0;
   }
@@ -503,7 +508,7 @@ header h1 {
     margin-right: 25px;
     padding: 0 0 0 125px;
   }
-  header .initContainer p {
+  header .introContainer p {
     font-size: 2.8rem;
     line-height: 1.8;
   }
@@ -519,11 +524,12 @@ header h1 {
 @media (max-width: 498px) {
   header h1 {
     font-size: 2.8rem;
+    margin-bottom: 20px;
     padding-left: 60px;
   }
-  header .initContainer p {
+  header .introContainer p {
     padding-bottom: 20px;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
   .canvas {
     height: 350px;
