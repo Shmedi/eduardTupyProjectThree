@@ -373,6 +373,7 @@ header h1 {
 
 .flex {
   height: 100%;
+  margin-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
