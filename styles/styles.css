@@ -372,7 +372,7 @@ header h1 {
 }
 
 .flex {
-  height: 100vh;
+  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
